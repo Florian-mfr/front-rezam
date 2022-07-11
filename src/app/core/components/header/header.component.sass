@@ -1,0 +1,32 @@
+.tab--selected
+  position: relative
+  letter-spacing: 0.7px
+  color: #171717
+  &:after
+    content: ""
+    position: absolute
+    background-color: #171717
+    height: 2px
+    width: 100%
+    left: 0
+    bottom: -3px
+    border-radius: 5px
+
+.tab
+  position: relative
+  letter-spacing: 0.7px
+  color: #6b7280
+  &:after
+    content: ""
+    position: absolute
+    background-color: #6b7280
+    height: 2px
+    width: 100%
+    left: 0
+    bottom: -3px
+    border-radius: 5px
+    transform: scale(0)
+    transition: 0.3s
+  &:hover::after
+    transform: scale(1)
+

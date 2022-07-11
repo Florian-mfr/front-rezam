@@ -1,0 +1,28 @@
+<div class="flex justify-between text-lg border-b-2 border-whitebis mx-4">
+  <div class="flex">
+    <span class="m-4 cursor-pointer"
+      [class.tab--selected]="routeName === '/accueil'"
+      [class.tab]="routeName !== '/accueil'"
+      (click)="router.navigate(['/accueil'])">Accueil</span>
+    <span class="m-4 cursor-pointer"
+      [class.tab--selected]="routeName === '/service'"
+      [class.tab]="routeName !== '/service'"
+      (click)="router.navigate(['/service'])">Service</span>
+    <span class="m-4 cursor-pointer"
+      [class.tab--selected]="routeName === '/cuisine'"
+      [class.tab]="routeName !== '/cuisine'"
+      (click)="router.navigate(['/cuisine'])">Cuisine</span>
+    <span class="m-4 cursor-pointer"
+      [class.tab--selected]="routeName === '/admin'"
+      [class.tab]="routeName !== '/admin'"
+      (click)="router.navigate(['/admin'])">Administration</span>
+  </div>
+  <div class="flex">
+    <span class="m-4 cursor-pointer"
+      [class.tab--selected]="routeName === '/mon-compte'"
+      [class.tab]="routeName !== '/mon-compte'"
+      (click)="router.navigate(['/mon-compte'])">Mon compte</span>
+    <span class="m-4 cursor-pointer tab"
+    (click)="logout()">Se déconnecter</span>
+  </div>
+</div>

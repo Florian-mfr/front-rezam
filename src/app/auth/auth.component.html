@@ -1,0 +1,28 @@
+<form
+  (ngSubmit)="submit()"
+  #loginForm="ngForm"
+  class="container mx-auto flex flex-col justify-center w-48 mt-4">
+  <label
+    for="username"
+    class="mx-auto">Nom d'utilisateur</label>
+  <input
+    type="text"
+    [(ngModel)]="user.username"
+    name="username"
+    id="username"
+    #_username="ngModel"
+    class="border border-slate-700">
+  <label
+    for="password"
+    class="mx-auto">Mot de passe</label>
+  <input
+    type="password"
+    [(ngModel)]="user.password"
+    name="password"
+    id="password"
+    #_password="ngModel"
+    class="border border-slate-700">
+  <button
+    type="submit"
+    class="btn btn-blue mt-2">Se connecter</button>
+</form>
