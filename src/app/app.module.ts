@@ -8,7 +8,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthModule } from './auth/auth.module';
 import { HomeComponent } from './home/home.component';
 import { CoreModule } from './core/core.module';
-import { MyAccountComponent } from './my-account/my-account/my-account.component';
+import { MyAccountComponent } from './my-account/my-account.component';
+import { StoreModule } from '@ngrx/store';
+
+import { currentUserReducer } from './store/currentUser/current-user.reducer';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +27,10 @@ import { MyAccountComponent } from './my-account/my-account/my-account.component
     AppRoutingModule,
     HttpClientModule,
     AuthModule,
-    CoreModule
+    CoreModule,
+    StoreModule.forRoot({
+      currentUser: currentUserReducer
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

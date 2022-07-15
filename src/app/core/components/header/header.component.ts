@@ -19,7 +19,6 @@ export class HeaderComponent implements OnInit {
   }
 
   protected logout () {
-    console.log('coucou')
     this.authService.logout()
   }
 }

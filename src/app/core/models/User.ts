@@ -1,14 +1,9 @@
 export class User {
   id?: string
-
   username: string
-
   email?: string
-
   password: string
-
   account?: string
-
   role?: string
 
   constructor ({id, username, email, password, account, role}: IUser) {
@@ -23,14 +18,9 @@ export class User {
 
 export interface IUser {
   id?: string
-
   username: string
-
   email: string
-
   password: string
-
   account: string
-
   role: string
 }
