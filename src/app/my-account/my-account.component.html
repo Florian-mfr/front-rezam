@@ -1,5 +1,8 @@
 <div>
   <div>
-    Hello {{ (currentUser$ | async)?.username }}
+    <div>Nom d'utilisateur : {{ (currentUser$ | async)?.username }}</div>
+    <div>Email : {{ (currentUser$ | async)?.email }}</div>
+    <div>Compte : {{ (currentUser$ | async)?.account }}</div>
+    <div>Rôle : {{ (currentUser$ | async)?.role }}</div>
   </div>
 </div>

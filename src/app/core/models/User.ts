@@ -1,12 +1,12 @@
 export class User {
-  id?: string
+  id?: string | null
   username: string
   email?: string
   password: string
   account?: string
   role?: string
 
-  constructor ({id, username, email, password, account, role}: IUser) {
+  constructor({ id, username, email, password, account, role }: IUser) {
     this.id = id
     this.username = username
     this.email = email
